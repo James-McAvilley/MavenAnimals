@@ -1,7 +1,9 @@
 package org.example;
+import java.util.logging.Logger;
 
 public class Main {
     public static void main(String[] args){
+        Logger logger = Logger.getLogger(Main.class.getName());
         //comment2
         Cat cat = new Cat();
         Cat cat1 = new Cat();
@@ -10,14 +12,12 @@ public class Main {
         Cat babyCat = new Cat();
         Dolphin dolphin = new Dolphin();
         cat.setName("Poppy");
-        System.out.println(cat.name);
+        logger.info(cat.name);
         cat.move();
         cat.kill();
         cat.liveBirth();
-        System.out.println(cat.getKillTotal());
         cat.setLegs(4);
-        System.out.println("The cat has " + cat.getLegs() + " legs");
-        System.out.println(cat.eat());
+        cat.eat();
         cat1.setName("Teddy");
         cat2.setName("Marley");
         cat3.setName("Jordan");
@@ -29,7 +29,7 @@ public class Main {
         if(cat1.female != cat2.female){
             Cat cat4 = new Cat();
             cat4.setName("Poppy");
-            System.out.println(cat4.getName() + " is born yay");
+            logger.info(cat4.getName() + " is born yay");
         }
 
 
