@@ -29,7 +29,7 @@ public class Main {
         if(cat1.female != cat2.female){
             Cat cat4 = new Cat();
             cat4.setName("Poppy");
-            System.out.println(cat4.getName() + " is born");
+            System.out.println(cat4.getName() + " is born yay");
         }
 
 
