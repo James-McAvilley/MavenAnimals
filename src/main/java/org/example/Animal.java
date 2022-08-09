@@ -5,18 +5,16 @@ abstract class Animal {
     int numberOfLegs;
     boolean alive = true;
 
+
     boolean female;
+    String gender;
+    String food;
 
     abstract void move();
     abstract boolean eat();
     abstract void sleep();
-    abstract boolean die();
+    abstract void die() throws DeathException;
 
-//    public int getAge(){
-//        return age;
-//    }
-//
-//    public void setAge(int age){
-//        this.age = age;
-//    }
+    abstract void gender();
+
 }

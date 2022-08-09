@@ -1,6 +1,8 @@
 package org.example;
+import java.util.Random;
 
 public class Cat extends Mammal {
+    Random rand = new Random();
 
     private int killTotal = 0;
 
@@ -8,6 +10,7 @@ public class Cat extends Mammal {
     public Cat(){
         killTotal = 3;
         numberOfLegs = 4;
+        female = rand.nextBoolean();
     }
 
 
@@ -29,9 +32,8 @@ public class Cat extends Mammal {
     }
 
     @Override
-    public boolean die() {
+    public void die() throws DeathException {
         this.alive = false;
-        return false;
     }
 
     public void kill(){
@@ -43,6 +45,17 @@ public class Cat extends Mammal {
     public void liveBirth() {
         this.babies++;
         System.out.println("The cat makes " + babies + " kittens");
+    }
+
+    public void gender(){
+        if(this.female){
+            this.gender = "Female";
+            System.out.println(this.name + " is " + this.gender);
+        }
+        else{
+            this.gender = "Male";
+            System.out.println(this.name + " is " + this.gender);
+        }
     }
 
     ////////////////GETTERS///////////////////////////////////////

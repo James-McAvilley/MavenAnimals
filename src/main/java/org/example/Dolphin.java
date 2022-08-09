@@ -23,8 +23,13 @@ public class Dolphin extends Mammal{
     }
 
     @Override
-    boolean die() {
-        return false;
+    void die() {
+        this.alive = false;
+    }
+
+    @Override
+    void gender() {
+
     }
 
     @Override
