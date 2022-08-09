@@ -9,7 +9,6 @@ public class Main {
         Cat cat1 = new Cat();
         Cat cat2 = new Cat();
         Cat cat3 = new Cat();
-        Dolphin dolphin = new Dolphin();
         cat.setName("Poppy");
         logger.info(cat.name);
         cat.move();
