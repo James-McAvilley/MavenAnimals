@@ -2,6 +2,7 @@ package org.example;
 
 public class Main {
     public static void main(String[] args){
+        //comment2
         Cat cat = new Cat();
         Cat cat1 = new Cat();
         Cat cat2 = new Cat();
@@ -24,6 +25,13 @@ public class Main {
         cat1.gender();
         cat2.gender();
         cat3.gender();
+
+        if(cat1.female != cat2.female){
+            Cat cat4 = new Cat();
+            cat4.setName("Poppy");
+            System.out.println(cat4.getName() + " is born");
+        }
+
 
     }
 }

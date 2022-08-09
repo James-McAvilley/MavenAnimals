@@ -8,7 +8,7 @@ public class Cat extends Mammal {
 
     /////////////////////CONSTRUCTORS////////////////////////////////////////
     public Cat(){
-        killTotal = 3;
+        killTotal = 0;
         numberOfLegs = 4;
         female = rand.nextBoolean();
     }
