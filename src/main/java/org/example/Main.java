@@ -4,7 +4,7 @@ import java.util.logging.Logger;
 public class Main {
     public static void main(String[] args){
         Logger logger = Logger.getLogger(Main.class.getName());
-        //comment2
+        //comment
         Cat cat = new Cat();
         Cat cat1 = new Cat();
         Cat cat2 = new Cat();
