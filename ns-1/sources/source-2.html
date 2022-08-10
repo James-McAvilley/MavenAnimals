@@ -1,0 +1,191 @@
+
+
+
+<!DOCTYPE html>
+<html id="htmlId">
+<head>
+  <title>Coverage Report > Cat</title>
+  <style type="text/css">
+    @import "../../css/coverage.css";
+    @import "../../css/idea.min.css";
+  </style>
+  <script type="text/javascript" src="../../js/highlight.min.js"></script>
+  <script type="text/javascript" src="../../js/highlightjs-line-numbers.min.js"></script>
+</head>
+
+<body>
+<div class="content">
+<div class="breadCrumbs">
+Current scope:     <a href="../../index.html">all classes</a>
+    <span class="separator">|</span>
+    <a href="../index.html">org.example</a>
+</div>
+
+<h1>Coverage Summary for Class: Cat (org.example)</h1>
+
+<table class="coverageStats">
+<tr>
+  <th class="name">Class</th>
+<th class="coverageStat 
+">
+  Class, %
+</th>
+<th class="coverageStat 
+">
+  Method, %
+</th>
+<th class="coverageStat 
+">
+  Line, %
+</th>
+</tr>
+<tr>
+  <td class="name">Cat</td>
+<td class="coverageStat">
+  <span class="percent">
+    100%
+  </span>
+  <span class="absValue">
+    (1/1)
+  </span>
+</td>
+<td class="coverageStat">
+  <span class="percent">
+    50%
+  </span>
+  <span class="absValue">
+    (8/16)
+  </span>
+</td>
+<td class="coverageStat">
+  <span class="percent">
+    64.3%
+  </span>
+  <span class="absValue">
+    (18/28)
+  </span>
+</td>
+</tr>
+
+</table>
+
+<br/>
+<br/>
+
+
+<pre>
+<code class="sourceCode" id="sourceCode">&nbsp;package org.example;
+&nbsp;import java.util.Random;
+&nbsp;
+&nbsp;public class Cat extends Mammal {
+<b class="fc">&nbsp;    Random rand = new Random();</b>
+&nbsp;
+<b class="fc">&nbsp;    private int killTotal = 0;</b>
+&nbsp;
+&nbsp;    /////////////////////CONSTRUCTORS////////////////////////////////////////
+<b class="fc">&nbsp;    public Cat(){</b>
+<b class="fc">&nbsp;        killTotal = 0;</b>
+<b class="fc">&nbsp;        numberOfLegs = 4;</b>
+<b class="fc">&nbsp;        female = rand.nextBoolean();</b>
+&nbsp;    }
+&nbsp;
+&nbsp;
+&nbsp;    /////////////////////METHODS///////////////////////////////////////
+&nbsp;    @Override
+&nbsp;    public void move() {
+<b class="fc">&nbsp;        System.out.println(&quot;Cats walk&quot;);</b>
+&nbsp;    }
+&nbsp;
+&nbsp;    @Override
+&nbsp;    public boolean eat() {
+<b class="fc">&nbsp;        this.hungry = false;</b>
+<b class="fc">&nbsp;        return false;</b>
+&nbsp;    }
+&nbsp;
+&nbsp;    @Override
+&nbsp;    public void sleep() {
+&nbsp;
+<b class="nc">&nbsp;    }</b>
+&nbsp;
+&nbsp;    @Override
+&nbsp;    public void die() throws DeathException {
+<b class="nc">&nbsp;        this.alive = false;</b>
+&nbsp;    }
+&nbsp;
+&nbsp;    public void kill(){
+<b class="fc">&nbsp;        System.out.println(&quot;The cat kills a pigeon because it is a psychopath&quot;);</b>
+<b class="fc">&nbsp;        killTotal++;</b>
+&nbsp;    }
+&nbsp;
+&nbsp;    @Override
+&nbsp;    public void liveBirth() {
+<b class="fc">&nbsp;        this.babies++;</b>
+<b class="fc">&nbsp;        System.out.println(&quot;The cat makes &quot; + babies + &quot; kittens&quot;);</b>
+&nbsp;    }
+&nbsp;
+&nbsp;    public void gender(){
+<b class="fc">&nbsp;        if(this.female){</b>
+<b class="fc">&nbsp;            this.gender = &quot;Female&quot;;</b>
+<b class="fc">&nbsp;            System.out.println(this.name + &quot; is &quot; + this.gender);</b>
+&nbsp;        }
+&nbsp;        else{
+<b class="nc">&nbsp;            this.gender = &quot;Male&quot;;</b>
+<b class="nc">&nbsp;            System.out.println(this.name + &quot; is &quot; + this.gender);</b>
+&nbsp;        }
+&nbsp;    }
+&nbsp;
+&nbsp;    ////////////////GETTERS///////////////////////////////////////
+&nbsp;    public int getKillTotal(){
+<b class="nc">&nbsp;        return killTotal;</b>
+&nbsp;    }
+&nbsp;
+&nbsp;    public String getName(){
+<b class="nc">&nbsp;        return name;</b>
+&nbsp;    }
+&nbsp;
+&nbsp;    public int getLegs(){
+<b class="nc">&nbsp;        return numberOfLegs;</b>
+&nbsp;    }
+&nbsp;
+<b class="nc">&nbsp;    public boolean getGender(){ return female;}</b>
+&nbsp;
+&nbsp;    ///////////////SETTERS///////////////////////////////////////////////////////
+&nbsp;    public void setKillTotal(int newKillTotal){
+<b class="nc">&nbsp;        this.killTotal = newKillTotal;</b>
+&nbsp;    }
+&nbsp;    public void setName(String newName){
+<b class="fc">&nbsp;        this.name = newName;</b>
+&nbsp;    }
+&nbsp;    public void setLegs(int newLegs){
+<b class="fc">&nbsp;        this.numberOfLegs = newLegs;</b>
+&nbsp;    }
+&nbsp;
+<b class="nc">&nbsp;    public void setGender(boolean newGender){this.female = newGender;}</b>
+&nbsp;}
+</code>
+</pre>
+</div>
+
+<script type="text/javascript">
+(function() {
+    var msie = false, msie9 = false;
+    /*@cc_on
+      msie = true;
+      @if (@_jscript_version >= 9)
+        msie9 = true;
+      @end
+    @*/
+
+    if (!msie || msie && msie9) {
+      hljs.highlightAll()
+      hljs.initLineNumbersOnLoad();
+    }
+})();
+</script>
+
+<div class="footer">
+    
+    <div style="float:right;">generated on 2022-08-09 15:45</div>
+</div>
+</body>
+</html>

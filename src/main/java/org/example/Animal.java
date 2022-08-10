@@ -1,9 +1,9 @@
 package org.example;
 
-abstract class Animal {
-    //
+public abstract class Animal {
+    //Comment
     int numberOfLegs;
-    public static boolean alive = true;
+    boolean alive = true;
     boolean tired = false;
 
     boolean female;
