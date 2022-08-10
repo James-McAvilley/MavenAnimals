@@ -5,7 +5,7 @@ abstract class Animal {
     int numberOfLegs;
     public boolean alive = true;
 
-
+//Comment
     public boolean female;
     String gender;
     String food;
