@@ -1,7 +1,7 @@
 package org.example;
 
 abstract class Animal {
-
+    //
     int numberOfLegs;
     public static boolean alive = true;
     boolean tired = false;
