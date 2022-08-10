@@ -1,13 +1,13 @@
 package org.example;
 
-abstract class Mammal extends Animal {
+public abstract class Mammal extends Animal {
     String name;
     String call;
 
     abstract void liveBirth();
-    boolean hungry = true;
-    boolean givesBirth;
-    boolean canWalk;
+    public boolean hungry = true;
+    public boolean givesBirth;
+    public boolean canWalk;
 
     protected int babies;
 

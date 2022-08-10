@@ -3,10 +3,10 @@ package org.example;
 abstract class Animal {
 
     int numberOfLegs;
-    boolean alive = true;
+    public boolean alive = true;
 
 
-    boolean female;
+    public boolean female;
     String gender;
     String food;
 

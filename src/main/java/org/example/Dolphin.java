@@ -8,32 +8,32 @@ public class Dolphin extends Mammal{
         numberOfLegs = 0;
     }
     @Override
-    void move() {
+    public void move() {
         System.out.println("A dolphin swims");
     }
 
     @Override
-    boolean eat() {
+    public boolean eat() {
         return false;
     }
 
     @Override
-    void sleep() {
+    public void sleep() {
 
     }
 
     @Override
-    void die() {
+    public void die() {
         this.alive = false;
     }
 
     @Override
-    void gender() {
+    public void gender() {
 
     }
 
     @Override
-    void liveBirth() {
+    public void liveBirth() {
 
     }
 
