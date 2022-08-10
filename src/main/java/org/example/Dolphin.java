@@ -1,7 +1,7 @@
 package org.example;
 
 public class Dolphin extends Mammal{
-//Comment
+
 
     public Dolphin(){
         canWalk = false;

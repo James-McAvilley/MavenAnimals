@@ -3,6 +3,7 @@ import java.util.logging.Logger;
 
 public class Main {
     public static void main(String[] args){
+        //Comment
         Logger logger = Logger.getLogger(Main.class.getName());
         Cat cat = new Cat();
         Cat cat1 = new Cat();

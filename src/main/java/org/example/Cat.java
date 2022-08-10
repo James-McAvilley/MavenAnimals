@@ -2,7 +2,7 @@ package org.example;
 import java.util.Random;
 
 public class Cat extends Mammal {
-    //Comment
+
     Random rand = new Random();
 
     private int killTotal = 0;
