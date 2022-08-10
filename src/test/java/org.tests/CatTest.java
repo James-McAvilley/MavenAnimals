@@ -21,13 +21,12 @@ public class CatTest {
     }
 
     @Test
-    public boolean test_eat(){
+    public void test_eat(){
         testAnimal.hungry = false;
-        return false;
     }
 
     @Test
-    public int testKillTotal(){
+    public void testKillTotal(){
         this.killTotal++;
         return this.killTotal;
     }
