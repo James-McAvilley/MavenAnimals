@@ -29,6 +29,7 @@ public class Cat extends Mammal {
 
     @Override
     public void sleep() {
+        this.tired = false;
 
     }
 
