@@ -28,7 +28,6 @@ public class CatTest {
     @Test
     public void testKillTotal(){
         this.killTotal++;
-        return this.killTotal;
     }
 
 
