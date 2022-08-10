@@ -2,7 +2,7 @@ package org.example;
 import java.security.SecureRandom;
 
 public class Cat extends Mammal {
-//
+
     SecureRandom rand = new SecureRandom();
 
     private int killTotal = 0;
