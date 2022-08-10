@@ -1,9 +1,9 @@
 package org.example;
-import java.util.Random;
+import java.security.SecureRandom;
 
 public class Cat extends Mammal {
 
-    Random rand = new Random();
+    SecureRandom rand = new SecureRandom();
 
     private int killTotal = 0;
 
