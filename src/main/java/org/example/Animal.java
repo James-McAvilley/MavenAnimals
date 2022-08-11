@@ -6,6 +6,8 @@ public abstract class Animal {
     boolean alive = true;
     boolean tired = false;
 
+    boolean hungry = true;
+
     boolean female;
     String gender;
     String food;
@@ -14,6 +16,8 @@ public abstract class Animal {
     abstract boolean eat();
     abstract void sleep();
     abstract void die() throws DeathException;
+
+    abstract void feed();
 
     abstract void gender();
 

@@ -60,6 +60,10 @@ public class Cat extends Mammal {
         }
     }
 
+    public void feed(){
+        this.hungry = true;
+    }
+
     ////////////////GETTERS///////////////////////////////////////
     public int getKillTotal(){
         return killTotal;

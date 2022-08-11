@@ -4,8 +4,11 @@ import io.cucumber.junit.Cucumber;
 import io.cucumber.junit.CucumberOptions;
 import org.junit.runner.RunWith;
 
-@CucumberOptions
+
 @RunWith(Cucumber.class)
+@CucumberOptions(features = "src/test/resources/cucumber",
+                 glue = "src/test/java/org.tests/CatTest.java")
 
 public class RunCucumberTest {
+
 }

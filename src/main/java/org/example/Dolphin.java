@@ -23,12 +23,25 @@ public class Dolphin extends Mammal{
     }
 
     @Override
-    public void die() {
+    public void die() throws DeathException {
         this.alive = false;
     }
 
     @Override
+    void feed() {
+
+    }
+
+    @Override
     public void gender() {
+        if(this.female){
+            this.gender = "Female";
+            System.out.println(this.name + " is " + this.gender);
+        }
+        else{
+            this.gender = "Male";
+            System.out.println(this.name + " is " + this.gender);
+        }
 
     }
 
